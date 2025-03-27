@@ -1,0 +1,9 @@
+{
+    "Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/EAM_AssetManagerv2/Actions/mobileservices/Service/DownloadStartedMessage.action",
+    "OnFailure": "/EAM_AssetManagerv2/Actions/mobileservices/Service/SyncFailureMessage.action"
+}

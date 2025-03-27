@@ -1,0 +1,14 @@
+{
+    "Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
+    "DefiningRequests": [{
+        "Name": "I_FuncnlLocCatStdVH",
+        "Query": "I_FuncnlLocCatStdVH"
+    }],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/EAM_AssetManagerv2/Actions/mobileservices/Service/InitializeOfflineFailureMessage.action"
+}

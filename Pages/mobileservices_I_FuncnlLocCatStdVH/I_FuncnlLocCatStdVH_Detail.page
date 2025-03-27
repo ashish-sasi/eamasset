@@ -1,0 +1,59 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
+		"EntitySet": "I_FuncnlLocCatStdVH",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [],
+		"Caption": "$(L,I_FuncnlLocCatStdVHType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{FunctionalLocationCategory}",
+						"Subhead": "{FunctionalLocationCategory_Text}",
+						"BodyText": "",
+						"Footnote": "",
+						"Description": "",
+						"StatusText": "",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": ""
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "FunctionalLocationCategory",
+							"Value": "{FunctionalLocationCategory}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FunctionalLocationCategory_Text",
+							"Value": "{FunctionalLocationCategory_Text}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "I_FuncnlLocCatStdVH_Detail"
+}

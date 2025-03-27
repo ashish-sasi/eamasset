@@ -1,0 +1,7 @@
+{
+    "Message": "Download in progress...",
+    "CompletionMessage": "Download Successful",
+    "CompletionTimeout": 7,
+    "OnSuccess": "/EAM_AssetManagerv2/Actions/mobileservices/Service/DownloadOffline.action",
+    "_Type": "Action.Type.ProgressBanner"
+}

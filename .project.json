@@ -1,0 +1,44 @@
+{
+    "Credential": "cf",
+    "Template": {
+        "Id": "@ext-mdkvsc-npm-dev/generator-mdk",
+        "Name": "List Detail",
+        "Version": "0.0.1"
+    },
+    "CF": {
+        "Target": "",
+        "Organization": "",
+        "Space": "",
+        "Deploy": {
+            "Description": "",
+            "WebClient": {
+                "Runtime": "",
+                "URL": ""
+            },
+            "Destination": [{
+                "CF": "",
+                "MDK": "mobileservices",
+                "URL": ""
+            }]
+        }
+    },
+    "MobileService": {
+        "Type": "standard",
+        "AdminAPI": "https://mobile-service-cockpit-api.cfapps.eu10.hana.ondemand.com/cockpit/v1/org/7597a1ef-2bc6-400d-bef6-664ab4e58605/space/9432be69-71bf-4e66-a51f-b5d7cb582790",
+        "AppId": "mobileservices",
+        "Destination": []
+    },
+    "Onboarding": {
+        "Schema": "sapmobilesvcs",
+        "TimeZone": "UTC",
+        "URL": "sapmobilesvcs://?AppId=mobileservices&ClientId=&SapCloudPlatformEndpoint=https://eam-asset-1j7v0ysh-eam-dev-mobileservices.cfapps.eu10-004.hana.ondemand.com&AuthorizationEndpointUrl=&RedirectUrl=&TokenUrl="
+    },
+    "LCAP": {
+        "FullName": "",
+        "Service": [],
+        "sourceTemplate": {
+            "id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+            "version": "1.40.12"
+        }
+    }
+}
