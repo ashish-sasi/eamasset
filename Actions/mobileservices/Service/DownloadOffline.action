@@ -1,13 +1,16 @@
 {
-    "Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
-    "DefiningRequests": [{
-        "Name": "I_FuncnlLocCatStdVH",
-        "Query": "I_FuncnlLocCatStdVH"
-    }],
-    "_Type": "Action.Type.OfflineOData.Download",
-    "ActionResult": {
-        "_Name": "sync"
-    },
-    "OnFailure": "/EAM_AssetManagerv2/Actions/mobileservices/Service/SyncFailureMessage.action",
-    "OnSuccess": "/EAM_AssetManagerv2/Rules/mobileservices/ErrorArchive_CheckForSyncError.js"
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnFailure": "/EAM_AssetManagerv2/Actions/mobileservices/Service/SyncFailureMessage.action",
+	"OnSuccess": "/EAM_AssetManagerv2/Rules/mobileservices/ErrorArchive_CheckForSyncError.js",
+	"Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
+	"DefiningRequests": [
+		{
+			"Name": "Customers",
+			"Query": "Customers",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
 }

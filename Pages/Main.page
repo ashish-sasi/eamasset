@@ -5,17 +5,10 @@
 				"ShowAllFilters": false,
 				"_Type": "Control.Type.FilterFeedbackBar"
 			},
-			"_Name": "SectionedTable0",
 			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Header": {
-						"_Name": "SectionHeader_mobileservices",
-						"AccessoryType": "None",
-						"UseTopPadding": true,
-						"Caption": "mobileservices",
-						"_Type": "SectionCommon.Type.Header"
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -23,40 +16,54 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable_mobileservices",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Buttons": [
 						{
-							"OnPress": "/EAM_AssetManagerv2/Actions/mobileservices/I_FuncnlLocCatStdVH/NavToI_FuncnlLocCatStdVH_List.action",
-							"Alignment": "Center",
-							"Title": "I_FuncnlLocCatStdVH",
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton1",
+							"Title": "$(L,'functionLoc')",
+							"Alignment": "Left",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"_Type": "ButtonTable.Type.Button"
+							"Image": "sap-icon://navigation-right-arrow",
+							"ImagePosition": "Trailing",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_List.action"
 						}
-					],
-					"_Name": "SectionButtonTable_mobileservices",
-					"_Type": "Section.Type.ButtonTable"
+					]
 				}
 			]
 		}
 	],
-	"_Name": "Main",
 	"_Type": "Page",
+	"_Name": "Main",
 	"ActionBar": {
 		"Items": [
 			{
+				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem0",
 				"Caption": "User Menu",
 				"Icon": "sap-icon://customer",
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/EAM_AssetManagerv2/Actions/Application/UserMenuPopover.action",
-				"_Type": "Control.Type.ActionBarItem"
+				"OnPress": "/EAM_AssetManagerv2/Actions/Application/UserMenuPopover.action"
 			}
 		],
 		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
 		"Caption": "Main",
-		"PrefersLargeCaption": true,
-		"_Type": "Control.Type.ActionBar"
+		"PrefersLargeCaption": true
 	}
 }

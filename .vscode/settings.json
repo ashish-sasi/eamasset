@@ -1,3 +1,21 @@
 {
-    "css.customData": ["./.vscode/my-less.css-data.json"]
+    "css.customData": [
+        "./.vscode/my-less.css-data.json"
+    ],
+    "breadcrumbs.enabled": true,
+    "mdk.uieditor": {
+        "left": {
+            "visible": true,
+            "width": 206
+        },
+        "right": {
+            "visible": true,
+            "width": 272
+        },
+        "device": "tablet"
+    },
+    "mdk.i18n": {
+        "displayLanguages": "i18n",
+        "showMissingKeyOnly": false
+    }
 }

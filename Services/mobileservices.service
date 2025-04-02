@@ -1,12 +1,6 @@
 {
-    "DestinationName": "mobileservices",
-    "OfflineEnabled": true,
-    "LanguageURLParam": "",
-    "OnlineOptions": {},
-    "OfflineOptions": {
-	"StoreParameters": {}
-},
-    "PathSuffix": "",
-    "SourceType": "Mobile",
-    "ServiceUrl":""
+	"DestinationName": "com.sap.edm.sampleservice.v4",
+	"OfflineEnabled": true,
+	"SourceType": "Mobile",
+	"RestService": false
 }

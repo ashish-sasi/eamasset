@@ -1,0 +1,188 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue1",
+							"KeyName": "Type",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue0",
+							"KeyName": "Category",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue2",
+							"KeyName": "Model No.",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue3",
+							"KeyName": "Work Center",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue4",
+							"KeyName": "Plant",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue6",
+							"KeyName": "Location",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue7",
+							"KeyName": "Room",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue8",
+							"KeyName": "Section",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue9",
+							"KeyName": "Manufacturer",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue10",
+							"KeyName": "Inventory No.",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue11",
+							"KeyName": "Part No.",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue12",
+							"KeyName": "Serial No.",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue13",
+							"KeyName": "Superior FLOC",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue1",
+					"Header": {
+						"Styles": {
+							"Header": "Functional Location Details",
+							"Caption": "Functional Location Details"
+						},
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader1",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Functional Location Details"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": " ",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue14",
+							"KeyName": "No Measuring Points available",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader3",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Measuring Point"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "FunctionLoc_Desc",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		],
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar"
+	}
+}
