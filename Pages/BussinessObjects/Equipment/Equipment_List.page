@@ -1,0 +1,103 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": false
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
+						"EntitySet": "ZA_Equipment"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						},
+						"Title": "{EquipmentName}",
+						"Subhead": "{EquipmentName}",
+						"DisplayDescriptionInMobile": true,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "None",
+						"AccessoryButtonIcon": "sap-icon://navigation-right-arrow",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false,
+							"OverflowToGrid": {
+								"Enabled": true
+							}
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": "/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_Des.action",
+						"_Type": "ObjectTable.Type.ObjectCell",
+						"Selected": true
+					},
+					"Search": {
+						"Mode": "Persistent",
+						"Options": {
+							"CaseSensitive": false,
+							"NumberSearch": {
+								"Enabled": false
+							},
+							"UseSearchOverFilter": {
+								"Enabled": true
+							}
+						},
+						"Enabled": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"Mode": "None",
+						"LongPressToEnable": "None",
+						"ExitOnLastDeselect": true
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "FunctionLoc_List",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Functional Location List",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		],
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar"
+	}
+}
