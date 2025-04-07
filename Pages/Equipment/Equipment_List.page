@@ -85,13 +85,13 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "FunctionLoc_List",
+	"_Name": "PageEquipment_List",
 	"ActionBar": {
 		"Items": [
 			{
 				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem0",
-				"Caption": "Functional Location List",
+				"Caption": "Equipment List",
 				"Position": "Left",
 				"IsIconCircular": false,
 				"Visible": true

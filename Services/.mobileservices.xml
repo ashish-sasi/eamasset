@@ -37,11 +37,11 @@
             <EntityType Name="ZA_EquipmentType" sap:label="Equipment Entity For EAM" sap:content-version="1">
                 <Key>
                     <PropertyRef Name="Equipment"/>
-                    <PropertyRef Name="ValidityEndTime"/>
+                    <PropertyRef Name="ValidityEndDate"/>
                 </Key>
                 <Property Name="Equipment" Type="Edm.String" Nullable="false" MaxLength="18" sap:display-format="UpperCase" sap:label="Equipment" sap:quickinfo="Equipment Number"/>
-                <Property Name="ValidityEndTime" Type="Edm.Time" Nullable="false" Precision="0" sap:label="Time" sap:quickinfo="Equipment usage period time stamp"/>
-                <Property Name="ValidityEndDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Valid To" sap:quickinfo="Valid To Date"/>
+                <Property Name="ValidityEndDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:display-format="Date" sap:label="Valid To" sap:quickinfo="Valid To Date"/>
+                <Property Name="ValidityEndTime" Type="Edm.Time" Precision="0" sap:label="Time" sap:quickinfo="Equipment usage period time stamp"/>
                 <Property Name="ValidityStartDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Valid From" sap:quickinfo="Valid-From Date"/>
                 <Property Name="EquipmentName" Type="Edm.String" MaxLength="40" sap:label="Object Description" sap:quickinfo="Description of technical object"/>
                 <Property Name="EquipmentCategory" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Equipment category"/>
@@ -133,52 +133,90 @@
                 <Property Name="EquipmentIsInactive" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Checkbox" sap:heading=""/>
                 <Property Name="EquipHasSubOrdinateEquipment" Type="Edm.String" MaxLength="1"/>
             </EntityType>
-            <EntityType Name="ZA_FUNCTIONAL_LOCATIONType" sap:label="Functional Location" sap:content-version="1">
+            <EntityType Name="ZA_FunctionalLocationType" sap:label="Equipment Entity For EAM" sap:content-version="1">
                 <Key>
                     <PropertyRef Name="FunctionalLocation"/>
                 </Key>
-                <Property Name="FunctionalLocation" Type="Edm.String" Nullable="false" MaxLength="40" sap:display-format="UpperCase" sap:label="Functional Location"/>
-                <Property Name="FunctionalLocationName" Type="Edm.String" MaxLength="40" sap:label="Description" sap:quickinfo="Description of functional location"/>
+                <Property Name="FunctionalLocation" Type="Edm.String" Nullable="false" MaxLength="30" sap:display-format="UpperCase" sap:label="Functional location"/>
+                <Property Name="FunctionalLocationLabelName" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:label="Functional Location" sap:quickinfo="Functional Location Label"/>
+                <Property Name="FunctionalLocationName" Type="Edm.String" MaxLength="40" sap:label="FunctLocDescrip." sap:quickinfo="Description of functional location"/>
                 <Property Name="FuncLocationStructure" Type="Edm.String" MaxLength="5" sap:display-format="UpperCase" sap:label="Structure indicator" sap:quickinfo="Functional Location Structure Indicator"/>
                 <Property Name="FunctionalLocationCategory" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="FunctLocCategory" sap:quickinfo="Functional location category"/>
-                <Property Name="WorkCenterInternalID" Type="Edm.String" MaxLength="8" sap:display-format="NonNegative" sap:label="Work Center" sap:quickinfo="Object ID of the Work Center"/>
-                <Property Name="WorkCenterTypeCode" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Object Type" sap:quickinfo="Object Type of CIM Resources for Work Center"/>
+                <Property Name="SuperiorFunctionalLocation" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Functional location"/>
+                <Property Name="SuperiorFuncnlLocLabelName" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:label="Functional Location" sap:quickinfo="Functional Location Label"/>
                 <Property Name="TechnicalObjectType" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Object Type" sap:quickinfo="Type of Technical Object"/>
-                <Property Name="MaintObjectLocAcctAssgmtNmbr" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Loc/Acct Assignment" sap:quickinfo="Location and account assignment for technical object"/>
-                <Property Name="ConstructionMaterial" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:label="Construction Type" sap:quickinfo="Construction type material of the object"/>
-                <Property Name="CreatedByUser" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Created by" sap:quickinfo="Name of User Who Created the Object"/>
-                <Property Name="CreationDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Created on" sap:quickinfo="Date on which the object was created"/>
-                <Property Name="LastChangedByUser" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Changed by" sap:quickinfo="Name of the user who last changed the object"/>
-                <Property Name="LastChangeDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Changed on" sap:quickinfo="Date on which the object was last changed"/>
-                <Property Name="AssetManufacturerName" Type="Edm.String" MaxLength="30" sap:label="Manufacturer" sap:quickinfo="Manufacturer of Asset"/>
-                <Property Name="ManufacturerPartTypeName" Type="Edm.String" MaxLength="20" sap:label="Model number" sap:quickinfo="Manufacturer model number"/>
-                <Property Name="MaintenancePlannerGroup" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Maint. Planner Group" sap:quickinfo="Planner Group for Customer Service and Plant Maintenance"/>
-                <Property Name="MaintenancePlanningPlant" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Planning Plant" sap:quickinfo="Maintenance Planning Plant"/>
-                <Property Name="CatalogProfile" Type="Edm.String" MaxLength="9" sap:display-format="UpperCase" sap:label="Catalog Profile"/>
                 <Property Name="AuthorizationGroup" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="AuthorizGroup" sap:quickinfo="Technical Object Authorization Group"/>
-                <Property Name="SuperiorFunctionalLocation" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:label="Superior FunctLoc." sap:quickinfo="Superior functional location"/>
-                <Property Name="ManufacturerCountry" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Mfr Ctry/Reg" sap:quickinfo="Country/Region of Manufacture"/>
-                <Property Name="ConstructionYear" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Construction year" sap:quickinfo="Year of construction"/>
-                <Property Name="ConstructionMonth" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Construction month" sap:quickinfo="Month of construction"/>
+                <Property Name="GrossWeight" Type="Edm.Decimal" Precision="13" Scale="3" sap:unit="GrossWeightUnit" sap:label="Gross weight"/>
+                <Property Name="GrossWeightUnit" Type="Edm.String" MaxLength="3" sap:label="Weight unit" sap:quickinfo="Weight Unit" sap:semantics="unit-of-measure"/>
+                <Property Name="OperationStartDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Start-up date" sap:quickinfo="Start-up Date of the Technical Object"/>
+                <Property Name="InventoryNumber" Type="Edm.String" MaxLength="25" sap:display-format="UpperCase" sap:label="Inventory Number" sap:quickinfo="Inventory number"/>
                 <Property Name="AcquisitionValue" Type="Edm.Decimal" Precision="14" Scale="3" sap:unit="Currency" sap:label="Acquisition Value"/>
                 <Property Name="Currency" Type="Edm.String" MaxLength="5" sap:label="Currency" sap:quickinfo="Currency Key" sap:semantics="currency-code"/>
                 <Property Name="AcquisitionDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Acquisition date"/>
-                <Property Name="MaintObjectInternalID" Type="Edm.String" MaxLength="22" sap:display-format="UpperCase" sap:label="Object number"/>
-                <Property Name="FuncnlLocPosInSuperiorTechObj" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Position in object" sap:quickinfo="Position in superior technical object"/>
+                <Property Name="AssetManufacturerName" Type="Edm.String" MaxLength="30" sap:label="Manufacturer" sap:quickinfo="Manufacturer of Asset"/>
                 <Property Name="ManufacturerPartNmbr" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="ManufactPartNo." sap:quickinfo="Manufacturer part number"/>
+                <Property Name="ManufacturerCountry" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Mfr Ctry/Reg" sap:quickinfo="Country/Region of Manufacture"/>
+                <Property Name="ManufacturerPartTypeName" Type="Edm.String" MaxLength="20" sap:label="Model number" sap:quickinfo="Manufacturer model number"/>
+                <Property Name="ConstructionMonth" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Construction month" sap:quickinfo="Month of construction"/>
+                <Property Name="ConstructionYear" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Construction year" sap:quickinfo="Year of construction"/>
                 <Property Name="ManufacturerSerialNumber" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Manuf. Serial Number" sap:quickinfo="Manufacturer's Serial Number"/>
-                <Property Name="InventoryNumber" Type="Edm.String" MaxLength="25" sap:display-format="UpperCase" sap:label="Inventory Number" sap:quickinfo="Inventory number"/>
-                <Property Name="GrossWeight" Type="Edm.Decimal" Precision="13" Scale="3" sap:unit="GrossWeightUnit" sap:label="Gross weight"/>
-                <Property Name="GrossWeightUnit" Type="Edm.String" MaxLength="3" sap:label="Weight unit" sap:quickinfo="Weight Unit" sap:semantics="unit-of-measure"/>
-                <Property Name="SizeOrDimensionText" Type="Edm.String" MaxLength="18" sap:display-format="UpperCase" sap:label="Size/dimension"/>
-                <Property Name="OperationStartDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Start-up date" sap:quickinfo="Start-up Date of the Technical Object"/>
-                <Property Name="LastChangeDateTime" Type="Edm.DateTimeOffset" Precision="0" sap:label="Short Time Stamp" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)"/>
+                <Property Name="MaintenancePlant" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Maintenance Plant"/>
+                <Property Name="AssetLocation" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Location" sap:quickinfo="Location of maintenance object"/>
+                <Property Name="AssetRoom" Type="Edm.String" MaxLength="8" sap:display-format="UpperCase" sap:label="Room"/>
+                <Property Name="PlantSection" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Plant Section"/>
+                <Property Name="WorkCenter" Type="Edm.String" MaxLength="8" sap:display-format="UpperCase" sap:label="Work Center"/>
+                <Property Name="WorkCenterInternalID" Type="Edm.String" MaxLength="8" sap:display-format="NonNegative" sap:label="PP work center" sap:quickinfo="Object ID of PP work center"/>
+                <Property Name="WorkCenterPlant" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Plant"/>
+                <Property Name="ABCIndicator" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="ABC Indicator" sap:quickinfo="ABC Indicator for Technical Object"/>
+                <Property Name="MaintObjectFreeDefinedAttrib" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Sort Field"/>
+                <Property Name="FormOfAddress" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Title" sap:quickinfo="Form-of-Address Key"/>
+                <Property Name="BusinessPartnerName1" Type="Edm.String" MaxLength="40" sap:label="Name" sap:quickinfo="Name 1"/>
+                <Property Name="BusinessPartnerName2" Type="Edm.String" MaxLength="40" sap:label="Name 2"/>
+                <Property Name="CityName" Type="Edm.String" MaxLength="40" sap:label="City"/>
+                <Property Name="HouseNumber" Type="Edm.String" MaxLength="10" sap:label="House Number"/>
+                <Property Name="HouseNumberSupplementText" Type="Edm.String" MaxLength="10" sap:label="Supplement" sap:quickinfo="House number supplement"/>
+                <Property Name="Building" Type="Edm.String" MaxLength="20" sap:label="Building Code" sap:quickinfo="Building (Number or Code)"/>
+                <Property Name="Floor" Type="Edm.String" MaxLength="10" sap:label="Floor" sap:quickinfo="Floor in building"/>
+                <Property Name="RoomNumber" Type="Edm.String" MaxLength="10" sap:label="Room Number" sap:quickinfo="Room or Apartment Number"/>
+                <Property Name="PostalCode" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Postal Code" sap:quickinfo="City postal code"/>
+                <Property Name="StreetName" Type="Edm.String" MaxLength="60" sap:label="Street"/>
+                <Property Name="Region" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Region" sap:quickinfo="Region (State, Province, County)"/>
+                <Property Name="Country" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Country/Region Key"/>
+                <Property Name="PhoneNumber" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Telephone" sap:quickinfo="First telephone no.: dialling code+number"/>
+                <Property Name="FaxNumber" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Fax" sap:quickinfo="First Fax No.: Area Code + Number"/>
+                <Property Name="CompanyCode" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Company Code"/>
+                <Property Name="BusinessArea" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Business Area"/>
+                <Property Name="MasterFixedAsset" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Asset" sap:quickinfo="Main Asset Number"/>
+                <Property Name="FixedAsset" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Sub-number" sap:quickinfo="Asset Subnumber"/>
+                <Property Name="CostCenter" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Cost Center"/>
+                <Property Name="ControllingArea" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Controlling Area"/>
+                <Property Name="WBSElementExternalID" Type="Edm.String" MaxLength="24" sap:display-format="UpperCase" sap:label="WBS Element" sap:quickinfo="Work Breakdown Structure Element (WBS Element) Edited"/>
+                <Property Name="SettlementOrder" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Settlement Order" sap:quickinfo="Settlement order"/>
+                <Property Name="ConstructionMaterial" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:label="Construction Type" sap:quickinfo="Construction type material of the object"/>
+                <Property Name="MaintenancePlannerGroup" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Maint. Planner Group" sap:quickinfo="Planner Group for Customer Service and Plant Maintenance"/>
+                <Property Name="MaintenancePlanningPlant" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Planning Plant" sap:quickinfo="Maintenance Planning Plant"/>
+                <Property Name="MainWorkCenterPlant" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Plant for WorkCenter" sap:quickinfo="Plant associated with main work center"/>
+                <Property Name="MainWorkCenter" Type="Edm.String" MaxLength="8" sap:display-format="UpperCase" sap:label="Main Work Center" sap:quickinfo="Main work center for maintenance tasks"/>
+                <Property Name="MainWorkCenterInternalID" Type="Edm.String" MaxLength="8" sap:display-format="NonNegative" sap:label="Work Center" sap:quickinfo="Object ID of the Work Center"/>
+                <Property Name="CatalogProfile" Type="Edm.String" MaxLength="9" sap:display-format="UpperCase" sap:label="Catalog Profile"/>
                 <Property Name="EquipmentInstallationIsAllowed" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Installation allowed" sap:quickinfo="Installation of equipment allowed at the functional location"/>
                 <Property Name="OnePieceOfEquipmentIsAllowed" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Single installation" sap:quickinfo="Single equipment installation at functional location"/>
+                <Property Name="SalesOrganization" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Sales Organization"/>
+                <Property Name="DistributionChannel" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Distribution Channel"/>
+                <Property Name="SalesOffice" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Sales office"/>
+                <Property Name="OrganizationDivision" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Division"/>
+                <Property Name="SalesGroup" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Sales group"/>
+                <Property Name="FunctionalLocationHasEquipment" Type="Edm.Boolean"/>
+                <Property Name="FuncnlLocHasSubOrdinateFuncLoc" Type="Edm.Boolean"/>
+                <Property Name="LastChangeDateTime" Type="Edm.DateTimeOffset" Precision="0" sap:label="Short Time Stamp" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)"/>
+                <Property Name="FuncnlLocIsMarkedForDeletion" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Checkbox" sap:heading=""/>
+                <Property Name="FuncnlLocIsDeleted" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Checkbox" sap:heading=""/>
+                <Property Name="FunctionalLocationIsActive" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Checkbox" sap:heading=""/>
+                <Property Name="FuncnlLocIsDeactivated" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Checkbox" sap:heading=""/>
             </EntityType>
             <EntityContainer Name="ZEAM_APP_ODATA_SRV_Entities" m:IsDefaultEntityContainer="true" sap:message-scope-supported="true" sap:supported-formats="atom json xlsx">
                 <EntitySet Name="ZA_Equipment" EntityType="ZEAM_APP_ODATA_SRV.ZA_EquipmentType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
-                <EntitySet Name="ZA_FUNCTIONAL_LOCATION" EntityType="ZEAM_APP_ODATA_SRV.ZA_FUNCTIONAL_LOCATIONType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="ZA_FunctionalLocation" EntityType="ZEAM_APP_ODATA_SRV.ZA_FunctionalLocationType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
             </EntityContainer>
             <Annotations Target="ZEAM_APP_ODATA_SRV.ZEAM_APP_ODATA_SRV_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true"/>

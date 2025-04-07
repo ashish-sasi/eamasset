@@ -8,24 +8,7 @@
 	"CF": {
 		"Target": "https://api.cf.eu10-004.hana.ondemand.com",
 		"Organization": "7597a1ef-2bc6-400d-bef6-664ab4e58605",
-		"Space": "9432be69-71bf-4e66-a51f-b5d7cb582790",
-		"Deploy": {
-			"Destination": [
-				{
-					"CF": "com.sap.edm.sampleservice.v4",
-					"MDK": "com.sap.edm.sampleservice.v4",
-					"URL": ""
-				}
-			],
-			"Name": "ns.EAM_AssetManagerv2",
-			"Version": "1.0.0",
-			"AppRouter": "standalone",
-			"WebClient": {
-				"Runtime": "preview",
-				"URL": "https://mdk-webclient-runtime-preview.cfapps.sap.hana.ondemand.com/preview/"
-			},
-			"Auth": true
-		}
+		"Space": "9432be69-71bf-4e66-a51f-b5d7cb582790"
 	},
 	"MobileService": {
 		"Type": "standard",
