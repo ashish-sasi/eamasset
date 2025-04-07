@@ -29,7 +29,7 @@
 					"Buttons": [
 						{
 							"_Type": "ButtonTable.Type.Button",
-							"_Name": "ButtonTableTypeButton1",
+							"_Name": "Button-FLList",
 							"Title": "$(L,'functionLoc')",
 							"Alignment": "Left",
 							"ButtonType": "Text",
@@ -40,6 +40,20 @@
 							"Visible": true,
 							"Enabled": true,
 							"OnPress": "/EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_List.action"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "Button-EquipmentsList",
+							"Title": "$(L,'Equipments')",
+							"Alignment": "Left",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://navigation-right-arrow",
+							"ImagePosition": "Trailing",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/EAM_AssetManagerv2/Actions/Equipment/NavToEquipment_List.action"
 						}
 					]
 				}
