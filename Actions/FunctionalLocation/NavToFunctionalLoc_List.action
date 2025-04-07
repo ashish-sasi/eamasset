@@ -3,6 +3,6 @@
 	"ActionResult": {
 		"_Name": "NavToFunctionalLoc_List"
 	},
-	"PageToOpen": "/EAM_AssetManagerv2/Pages/FunctionLoc_List.page",
+	"PageToOpen": "/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_List.page",
 	"NavigationType": "Inner"
 }

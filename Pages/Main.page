@@ -36,10 +36,10 @@
 							"Semantic": "Tint",
 							"Image": "sap-icon://navigation-right-arrow",
 							"ImagePosition": "Trailing",
-							"FullWidth": false,
+							"FullWidth": true,
 							"Visible": true,
 							"Enabled": true,
-							"OnPress": "/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_List.action"
+							"OnPress": "/EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_List.action"
 						}
 					]
 				}

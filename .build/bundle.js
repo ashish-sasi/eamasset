@@ -36,6 +36,10 @@ let eam_assetmanagerv2_actions_closepage_action = __webpack_require__(/*! ./EAM_
 let eam_assetmanagerv2_actions_errorarchive_errorarchive_syncfailure_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/ErrorArchive/ErrorArchive_SyncFailure.action */ "./build.definitions/EAM_AssetManagerv2/Actions/ErrorArchive/ErrorArchive_SyncFailure.action")
 let eam_assetmanagerv2_actions_errorarchive_navtoerrorarchive_detail_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/ErrorArchive/NavToErrorArchive_Detail.action */ "./build.definitions/EAM_AssetManagerv2/Actions/ErrorArchive/NavToErrorArchive_Detail.action")
 let eam_assetmanagerv2_actions_errorarchive_navtoerrorarchive_list_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/ErrorArchive/NavToErrorArchive_List.action */ "./build.definitions/EAM_AssetManagerv2/Actions/ErrorArchive/NavToErrorArchive_List.action")
+let eam_assetmanagerv2_actions_functionallocation_functionloc_desc_menu_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/FunctionalLocation/FunctionLoc_Desc_Menu.action */ "./build.definitions/EAM_AssetManagerv2/Actions/FunctionalLocation/FunctionLoc_Desc_Menu.action")
+let eam_assetmanagerv2_actions_functionallocation_functionloc_list_filter_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/FunctionalLocation/FunctionLoc_List_Filter.action */ "./build.definitions/EAM_AssetManagerv2/Actions/FunctionalLocation/FunctionLoc_List_Filter.action")
+let eam_assetmanagerv2_actions_functionallocation_navtofunctionalloc_des_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_Des.action */ "./build.definitions/EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_Des.action")
+let eam_assetmanagerv2_actions_functionallocation_navtofunctionalloc_list_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_List.action */ "./build.definitions/EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_List.action")
 let eam_assetmanagerv2_actions_genericbannermessage_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/GenericBannerMessage.action */ "./build.definitions/EAM_AssetManagerv2/Actions/GenericBannerMessage.action")
 let eam_assetmanagerv2_actions_genericmessagebox_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/GenericMessageBox.action */ "./build.definitions/EAM_AssetManagerv2/Actions/GenericMessageBox.action")
 let eam_assetmanagerv2_actions_genericnavigation_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/GenericNavigation.action */ "./build.definitions/EAM_AssetManagerv2/Actions/GenericNavigation.action")
@@ -54,9 +58,6 @@ let eam_assetmanagerv2_actions_mobileservices_service_initializeofflinefailureme
 let eam_assetmanagerv2_actions_mobileservices_service_syncfailuremessage_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/mobileservices/Service/SyncFailureMessage.action */ "./build.definitions/EAM_AssetManagerv2/Actions/mobileservices/Service/SyncFailureMessage.action")
 let eam_assetmanagerv2_actions_mobileservices_service_syncstartedmessage_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/mobileservices/Service/SyncStartedMessage.action */ "./build.definitions/EAM_AssetManagerv2/Actions/mobileservices/Service/SyncStartedMessage.action")
 let eam_assetmanagerv2_actions_mobileservices_service_uploadoffline_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/mobileservices/Service/UploadOffline.action */ "./build.definitions/EAM_AssetManagerv2/Actions/mobileservices/Service/UploadOffline.action")
-let eam_assetmanagerv2_actions_navtofunctionalloc_des_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/NavToFunctionalLoc_Des.action */ "./build.definitions/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_Des.action")
-let eam_assetmanagerv2_actions_navtofunctionalloc_desc_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/NavToFunctionalLoc_Desc.action */ "./build.definitions/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_Desc.action")
-let eam_assetmanagerv2_actions_navtofunctionalloc_list_action = __webpack_require__(/*! ./EAM_AssetManagerv2/Actions/NavToFunctionalLoc_List.action */ "./build.definitions/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_List.action")
 let eam_assetmanagerv2_globals_application_appdefinition_version_global = __webpack_require__(/*! ./EAM_AssetManagerv2/Globals/Application/AppDefinition_Version.global */ "./build.definitions/EAM_AssetManagerv2/Globals/Application/AppDefinition_Version.global")
 let eam_assetmanagerv2_globals_application_applicationname_global = __webpack_require__(/*! ./EAM_AssetManagerv2/Globals/Application/ApplicationName.global */ "./build.definitions/EAM_AssetManagerv2/Globals/Application/ApplicationName.global")
 let eam_assetmanagerv2_globals_application_supportemail_global = __webpack_require__(/*! ./EAM_AssetManagerv2/Globals/Application/SupportEmail.global */ "./build.definitions/EAM_AssetManagerv2/Globals/Application/SupportEmail.global")
@@ -68,8 +69,9 @@ let eam_assetmanagerv2_pages_application_support_page = __webpack_require__(/*! 
 let eam_assetmanagerv2_pages_application_useractivitylog_page = __webpack_require__(/*! ./EAM_AssetManagerv2/Pages/Application/UserActivityLog.page */ "./build.definitions/EAM_AssetManagerv2/Pages/Application/UserActivityLog.page")
 let eam_assetmanagerv2_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./EAM_AssetManagerv2/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/EAM_AssetManagerv2/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let eam_assetmanagerv2_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./EAM_AssetManagerv2/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/EAM_AssetManagerv2/Pages/ErrorArchive/ErrorArchive_List.page")
-let eam_assetmanagerv2_pages_functionloc_desc_page = __webpack_require__(/*! ./EAM_AssetManagerv2/Pages/FunctionLoc_Desc.page */ "./build.definitions/EAM_AssetManagerv2/Pages/FunctionLoc_Desc.page")
-let eam_assetmanagerv2_pages_functionloc_list_page = __webpack_require__(/*! ./EAM_AssetManagerv2/Pages/FunctionLoc_List.page */ "./build.definitions/EAM_AssetManagerv2/Pages/FunctionLoc_List.page")
+let eam_assetmanagerv2_pages_functionallocation_functionloc_desc_page = __webpack_require__(/*! ./EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_Desc.page */ "./build.definitions/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_Desc.page")
+let eam_assetmanagerv2_pages_functionallocation_functionloc_list_filter_page = __webpack_require__(/*! ./EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_List_Filter.page */ "./build.definitions/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_List_Filter.page")
+let eam_assetmanagerv2_pages_functionallocation_functionloc_list_page = __webpack_require__(/*! ./EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_List.page */ "./build.definitions/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_List.page")
 let eam_assetmanagerv2_pages_main_page = __webpack_require__(/*! ./EAM_AssetManagerv2/Pages/Main.page */ "./build.definitions/EAM_AssetManagerv2/Pages/Main.page")
 let eam_assetmanagerv2_rules_application_appupdatefailure_js = __webpack_require__(/*! ./EAM_AssetManagerv2/Rules/Application/AppUpdateFailure.js */ "./build.definitions/EAM_AssetManagerv2/Rules/Application/AppUpdateFailure.js")
 let eam_assetmanagerv2_rules_application_appupdatesuccess_js = __webpack_require__(/*! ./EAM_AssetManagerv2/Rules/Application/AppUpdateSuccess.js */ "./build.definitions/EAM_AssetManagerv2/Rules/Application/AppUpdateSuccess.js")
@@ -78,6 +80,7 @@ let eam_assetmanagerv2_rules_application_getclientsupportversions_js = __webpack
 let eam_assetmanagerv2_rules_application_getclientversion_js = __webpack_require__(/*! ./EAM_AssetManagerv2/Rules/Application/GetClientVersion.js */ "./build.definitions/EAM_AssetManagerv2/Rules/Application/GetClientVersion.js")
 let eam_assetmanagerv2_rules_application_onwillupdate_js = __webpack_require__(/*! ./EAM_AssetManagerv2/Rules/Application/OnWillUpdate.js */ "./build.definitions/EAM_AssetManagerv2/Rules/Application/OnWillUpdate.js")
 let eam_assetmanagerv2_rules_application_resetappsettingsandlogout_js = __webpack_require__(/*! ./EAM_AssetManagerv2/Rules/Application/ResetAppSettingsAndLogout.js */ "./build.definitions/EAM_AssetManagerv2/Rules/Application/ResetAppSettingsAndLogout.js")
+let eam_assetmanagerv2_rules_functionallist_firstnamefilter_js = __webpack_require__(/*! ./EAM_AssetManagerv2/Rules/FunctionalList_FirstNameFilter.js */ "./build.definitions/EAM_AssetManagerv2/Rules/FunctionalList_FirstNameFilter.js")
 let eam_assetmanagerv2_rules_getselectedtitle_js = __webpack_require__(/*! ./EAM_AssetManagerv2/Rules/GetSelectedTitle.js */ "./build.definitions/EAM_AssetManagerv2/Rules/GetSelectedTitle.js")
 let eam_assetmanagerv2_rules_logging_loglevels_js = __webpack_require__(/*! ./EAM_AssetManagerv2/Rules/Logging/LogLevels.js */ "./build.definitions/EAM_AssetManagerv2/Rules/Logging/LogLevels.js")
 let eam_assetmanagerv2_rules_logging_settracecategories_js = __webpack_require__(/*! ./EAM_AssetManagerv2/Rules/Logging/SetTraceCategories.js */ "./build.definitions/EAM_AssetManagerv2/Rules/Logging/SetTraceCategories.js")
@@ -118,6 +121,10 @@ module.exports = {
 	eam_assetmanagerv2_actions_errorarchive_errorarchive_syncfailure_action : eam_assetmanagerv2_actions_errorarchive_errorarchive_syncfailure_action,
 	eam_assetmanagerv2_actions_errorarchive_navtoerrorarchive_detail_action : eam_assetmanagerv2_actions_errorarchive_navtoerrorarchive_detail_action,
 	eam_assetmanagerv2_actions_errorarchive_navtoerrorarchive_list_action : eam_assetmanagerv2_actions_errorarchive_navtoerrorarchive_list_action,
+	eam_assetmanagerv2_actions_functionallocation_functionloc_desc_menu_action : eam_assetmanagerv2_actions_functionallocation_functionloc_desc_menu_action,
+	eam_assetmanagerv2_actions_functionallocation_functionloc_list_filter_action : eam_assetmanagerv2_actions_functionallocation_functionloc_list_filter_action,
+	eam_assetmanagerv2_actions_functionallocation_navtofunctionalloc_des_action : eam_assetmanagerv2_actions_functionallocation_navtofunctionalloc_des_action,
+	eam_assetmanagerv2_actions_functionallocation_navtofunctionalloc_list_action : eam_assetmanagerv2_actions_functionallocation_navtofunctionalloc_list_action,
 	eam_assetmanagerv2_actions_genericbannermessage_action : eam_assetmanagerv2_actions_genericbannermessage_action,
 	eam_assetmanagerv2_actions_genericmessagebox_action : eam_assetmanagerv2_actions_genericmessagebox_action,
 	eam_assetmanagerv2_actions_genericnavigation_action : eam_assetmanagerv2_actions_genericnavigation_action,
@@ -136,9 +143,6 @@ module.exports = {
 	eam_assetmanagerv2_actions_mobileservices_service_syncfailuremessage_action : eam_assetmanagerv2_actions_mobileservices_service_syncfailuremessage_action,
 	eam_assetmanagerv2_actions_mobileservices_service_syncstartedmessage_action : eam_assetmanagerv2_actions_mobileservices_service_syncstartedmessage_action,
 	eam_assetmanagerv2_actions_mobileservices_service_uploadoffline_action : eam_assetmanagerv2_actions_mobileservices_service_uploadoffline_action,
-	eam_assetmanagerv2_actions_navtofunctionalloc_des_action : eam_assetmanagerv2_actions_navtofunctionalloc_des_action,
-	eam_assetmanagerv2_actions_navtofunctionalloc_desc_action : eam_assetmanagerv2_actions_navtofunctionalloc_desc_action,
-	eam_assetmanagerv2_actions_navtofunctionalloc_list_action : eam_assetmanagerv2_actions_navtofunctionalloc_list_action,
 	eam_assetmanagerv2_globals_application_appdefinition_version_global : eam_assetmanagerv2_globals_application_appdefinition_version_global,
 	eam_assetmanagerv2_globals_application_applicationname_global : eam_assetmanagerv2_globals_application_applicationname_global,
 	eam_assetmanagerv2_globals_application_supportemail_global : eam_assetmanagerv2_globals_application_supportemail_global,
@@ -150,8 +154,9 @@ module.exports = {
 	eam_assetmanagerv2_pages_application_useractivitylog_page : eam_assetmanagerv2_pages_application_useractivitylog_page,
 	eam_assetmanagerv2_pages_errorarchive_errorarchive_detail_page : eam_assetmanagerv2_pages_errorarchive_errorarchive_detail_page,
 	eam_assetmanagerv2_pages_errorarchive_errorarchive_list_page : eam_assetmanagerv2_pages_errorarchive_errorarchive_list_page,
-	eam_assetmanagerv2_pages_functionloc_desc_page : eam_assetmanagerv2_pages_functionloc_desc_page,
-	eam_assetmanagerv2_pages_functionloc_list_page : eam_assetmanagerv2_pages_functionloc_list_page,
+	eam_assetmanagerv2_pages_functionallocation_functionloc_desc_page : eam_assetmanagerv2_pages_functionallocation_functionloc_desc_page,
+	eam_assetmanagerv2_pages_functionallocation_functionloc_list_filter_page : eam_assetmanagerv2_pages_functionallocation_functionloc_list_filter_page,
+	eam_assetmanagerv2_pages_functionallocation_functionloc_list_page : eam_assetmanagerv2_pages_functionallocation_functionloc_list_page,
 	eam_assetmanagerv2_pages_main_page : eam_assetmanagerv2_pages_main_page,
 	eam_assetmanagerv2_rules_application_appupdatefailure_js : eam_assetmanagerv2_rules_application_appupdatefailure_js,
 	eam_assetmanagerv2_rules_application_appupdatesuccess_js : eam_assetmanagerv2_rules_application_appupdatesuccess_js,
@@ -160,6 +165,7 @@ module.exports = {
 	eam_assetmanagerv2_rules_application_getclientversion_js : eam_assetmanagerv2_rules_application_getclientversion_js,
 	eam_assetmanagerv2_rules_application_onwillupdate_js : eam_assetmanagerv2_rules_application_onwillupdate_js,
 	eam_assetmanagerv2_rules_application_resetappsettingsandlogout_js : eam_assetmanagerv2_rules_application_resetappsettingsandlogout_js,
+	eam_assetmanagerv2_rules_functionallist_firstnamefilter_js : eam_assetmanagerv2_rules_functionallist_firstnamefilter_js,
 	eam_assetmanagerv2_rules_getselectedtitle_js : eam_assetmanagerv2_rules_getselectedtitle_js,
 	eam_assetmanagerv2_rules_logging_loglevels_js : eam_assetmanagerv2_rules_logging_loglevels_js,
 	eam_assetmanagerv2_rules_logging_settracecategories_js : eam_assetmanagerv2_rules_logging_settracecategories_js,
@@ -440,6 +446,47 @@ function ResetAppSettingsAndLogout(clientAPI) {
 
 /***/ }),
 
+/***/ "./build.definitions/EAM_AssetManagerv2/Rules/FunctionalList_FirstNameFilter.js":
+/*!**************************************************************************************!*\
+  !*** ./build.definitions/EAM_AssetManagerv2/Rules/FunctionalList_FirstNameFilter.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ FunctionalList_FirstNameFilter)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function FunctionalList_FirstNameFilter(clientAPI) {
+  let platform = clientAPI.nativescript.platformModule;
+  let appSettings = clientAPI.nativescript.appSettingsModule;
+  var appId;
+  if (platform && (platform.isIOS || platform.isAndroid)) {
+    appId = clientAPI.evaluateTargetPath('#Application/#ClientData/#Property:MobileServiceAppId');
+  } else {
+    appId = 'WebClient';
+  }
+  let cd = clientAPI.getAppClientData();
+  let promoItems = [];
+  var filter = '';
+  if (cd.promoItems) {
+    for (var item of Object.keys(cd.promoItems)) {
+      promoItems.push(`FirstName eq ${item}`);
+    }
+    if (promoItems.length > 0) {
+      filter = `(${promoItems.join(' or ')})`;
+    }
+  }
+  console.log(filter);
+  return filter;
+}
+
+/***/ }),
+
 /***/ "./build.definitions/EAM_AssetManagerv2/Rules/GetSelectedTitle.js":
 /*!************************************************************************!*\
   !*** ./build.definitions/EAM_AssetManagerv2/Rules/GetSelectedTitle.js ***!
@@ -456,7 +503,6 @@ __webpack_require__.r(__webpack_exports__);
  * @param {IClientAPI} clientAPI
  */
 function GetSelectedTitle(clientAPI) {
-  // clientAPI.executeAction('/EAM_AssetManagerv2/Actions/GenericMessageBox.action')
   let selectedItem = clientAPI.binding;
   let title = selectedItem.Title;
   clientAPI.evaluateTargetPathForAPI('#Application/#ClientData/#Property:GlobalTitle').setValue(title);
@@ -806,7 +852,11 @@ __webpack_require__.r(__webpack_exports__);
  * Describe this function...
  * @param {IClientAPI} clientAPI
  */
-function TestRule(clientAPI) {}
+function TestRule(clientAPI) {
+  console.log(clientAPI);
+  return "$orderby=FirstName";
+  // return "Functional Description";
+}
 
 /***/ }),
 
@@ -869,7 +919,14 @@ Page
 
 { color: @mdkYellow1; background-color: @mdkRed1; }
 */
-`, "",{"version":3,"sources":["webpack://./build.definitions/EAM_AssetManagerv2/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n"],"sourceRoot":""}]);
+Button {
+  color: red;
+}
+.FormCell {
+  display: inline-flex;
+  flex-direction: column;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/EAM_AssetManagerv2/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;AACD;EACE,UAAU;AACZ;AACA;EACE,oBAAoB;EACpB,sBAAsB;AACxB","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\nButton {\n  color: red;\n}\n.FormCell {\n  display: inline-flex;\n  flex-direction: column;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -907,7 +964,15 @@ Page
 .MyButton
 
 { color: @mdkYellow1; background-color: @mdkRed1; }
-*/`, "",{"version":3,"sources":["webpack://./build.definitions/EAM_AssetManagerv2/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/"],"sourceRoot":""}]);
+*/
+Button{
+    color: red;
+}
+
+.FormCell{
+    display: inline-flex;
+    flex-direction: column;
+}`, "",{"version":3,"sources":["webpack://./build.definitions/EAM_AssetManagerv2/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;AACD;IACI,UAAU;AACd;;AAEA;IACI,oBAAoB;IACpB,sBAAsB;AAC1B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\nButton{\n    color: red;\n}\n\n.FormCell{\n    display: inline-flex;\n    flex-direction: column;\n}"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -925,7 +990,14 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.ns-light Button {
+	color: red;
+}
+.ns-light .FormCell {
+	display: inline-flex;
+	flex-direction: column;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/EAM_AssetManagerv2/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,UAAU;AACX;AACA;CACC,oBAAoB;CACpB,sBAAsB;AACvB","sourcesContent":[".ns-light Button {\n\tcolor: red;\n}\n.ns-light .FormCell {\n\tdisplay: inline-flex;\n\tflex-direction: column;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -943,7 +1015,11 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `FormCell {
+	display: inline-flex;
+	flex-direction: column;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/EAM_AssetManagerv2/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA;CACC,oBAAoB;CACpB,sBAAsB;AACvB","sourcesContent":["FormCell {\n\tdisplay: inline-flex;\n\tflex-direction: column;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1121,23 +1197,33 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
 
 /***/ }),
 
-/***/ "./build.definitions/EAM_AssetManagerv2/Pages/FunctionLoc_Desc.page":
-/*!**************************************************************************!*\
-  !*** ./build.definitions/EAM_AssetManagerv2/Pages/FunctionLoc_Desc.page ***!
-  \**************************************************************************/
+/***/ "./build.definitions/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_Desc.page":
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_Desc.page ***!
+  \*********************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Type","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Category","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Model No.","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Work Center","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue4","KeyName":"Plant","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue6","KeyName":"Location","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue7","KeyName":"Room","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue8","KeyName":"Section","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue9","KeyName":"Manufacturer","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue10","KeyName":"Inventory No.","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue11","KeyName":"Part No.","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue12","KeyName":"Serial No.","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue13","KeyName":"Superior FLOC","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue1","Header":{"Styles":{"Header":"Functional Location Details","Caption":"Functional Location Details"},"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader1","AccessoryType":"None","UseTopPadding":true,"Caption":"Functional Location Details"},"Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":" ","_Type":"KeyValue.Type.Item","_Name":"KeyValue14","KeyName":"No Measuring Points available","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader3","AccessoryType":"None","UseTopPadding":true,"Caption":"Measuring Point"},"Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"Add Work Order","_Type":"KeyValue.Type.Item","_Name":"KeyValue15","KeyName":"Button"},{"Value":"Add Notification","_Type":"KeyValue.Type.Item","_Name":"KeyValue16","KeyName":"Button"},{"Value":"Button X","_Type":"KeyValue.Type.Item","_Name":"KeyValue17","KeyName":"Button"}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue2","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader4","AccessoryType":"None","UseTopPadding":true,"Caption":"Actions"},"Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1,"ScrollDirection":"Horizontal"}}]}],"_Type":"Page","_Name":"FunctionLoc_Desc","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"","Position":"Left","IsIconCircular":false,"Visible":true}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{FunctionalLocation}","DetailImage":"sap-icon://retail-store","DetailImageIsCircular":true,"HeadlineText":"{FunctionalLocationName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"-","_Type":"KeyValue.Type.Item","_Name":"KeyValue15","KeyName":"User Status","Visible":true},{"Value":"Created","_Type":"KeyValue.Type.Item","_Name":"KeyValue16","KeyName":"System Status","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue2","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader5","AccessoryType":"None","UseTopPadding":true,"Caption":"Statuses"},"Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{MaintenancePlanningPlant}","_Type":"KeyValue.Type.Item","_Name":"KeyValue4","KeyName":"Plant","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue6","KeyName":"Location","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue7","KeyName":"Room","Visible":true},{"Value":"{FirstName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Plant Section","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue1","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader4","AccessoryType":"None","UseTopPadding":true,"Caption":"Functional Location Details"},"Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":" ","_Type":"KeyValue.Type.Item","_Name":"KeyValue14","KeyName":"No Measuring Points available","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader3","AccessoryType":"None","UseTopPadding":true,"Caption":"Measuring Point"},"Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue3","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader6","AccessoryType":"None","UseTopPadding":true,"Caption":"Equipment"},"Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":" ","_Type":"KeyValue.Type.Item","_Name":"KeyValue17","KeyName":"No Equipment Available","Visible":true}],"MaxItemCount":1,"Layout":{"NumberOfColumns":1}}]}],"_Type":"Page","_Name":"FunctionLoc_Desc","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"{FunctionalLocation}","Position":"Left","IsIconCircular":false,"Visible":true},{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem2","Caption":"Options","Icon":"sap-icon://menu2","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/EAM_AssetManagerv2/Actions/FunctionalLocation/FunctionLoc_Desc_Menu.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar"}}
 
 /***/ }),
 
-/***/ "./build.definitions/EAM_AssetManagerv2/Pages/FunctionLoc_List.page":
-/*!**************************************************************************!*\
-  !*** ./build.definitions/EAM_AssetManagerv2/Pages/FunctionLoc_List.page ***!
-  \**************************************************************************/
+/***/ "./build.definitions/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_List.page":
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_List.page ***!
+  \*********************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":false},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/EAM_AssetManagerv2/Services/mobileservices.service","EntitySet":"Customers"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{FirstName}","Subhead":"{DateOfBirth}","DisplayDescriptionInMobile":true,"PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://navigation-right-arrow","Tags":[],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false,"OverflowToGrid":{"Enabled":true}},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":"/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_Des.action","_Type":"ObjectTable.Type.ObjectCell","Selected":true},"Search":{"Mode":"Persistent","Options":{"CaseSensitive":false,"NumberSearch":{"Enabled":false},"UseSearchOverFilter":{"Enabled":true}},"Enabled":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"Mode":"None","LongPressToEnable":"None","ExitOnLastDeselect":true}}]}],"_Type":"Page","_Name":"FunctionLoc_List","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Functional Location List","Position":"Left","IsIconCircular":false,"Visible":true}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":false,"FooterSeparator":true,"ControlSeparator":false},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/EAM_AssetManagerv2/Services/mobileservices.service","EntitySet":"ZA_FUNCTIONAL_LOCATION"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{FunctionalLocationName}","Subhead":"{MaintenancePlanningPlant}","Footnote":"{FunctionalLocation}","DisplayDescriptionInMobile":true,"PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://navigation-right-arrow","Tags":[],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false,"OverflowToGrid":{"Enabled":true}},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":"/EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_Des.action","_Type":"ObjectTable.Type.ObjectCell","Selected":true},"Search":{"Mode":"Persistent","Options":{"CaseSensitive":false,"NumberSearch":{"Enabled":false},"UseSearchOverFilter":{"Enabled":true}},"Enabled":true,"BarcodeScanner":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"Mode":"None","LongPressToEnable":"None","ExitOnLastDeselect":true}}]}],"_Type":"Page","_Name":"FunctionLoc_List","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Functional Location List","Position":"Left","IsIconCircular":false,"Visible":true},{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"Filter","Icon":"sap-icon://filter","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/EAM_AssetManagerv2/Actions/FunctionalLocation/FunctionLoc_List_Filter.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar"},"Result":["#Page:FunctionLoc_List/#Control:SortBy/#Value"]}
+
+/***/ }),
+
+/***/ "./build.definitions/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_List_Filter.page":
+/*!****************************************************************************************************!*\
+  !*** ./build.definitions/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_List_Filter.page ***!
+  \****************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.FormCellContainer","_Name":"FormCellContainer0","Sections":[{"Controls":[{"AllowMultipleSelection":true,"_Type":"Control.Type.FormCell.Sorter","_Name":"SortBy","IsVisible":true,"AllowEmptySelection":false,"IsEditable":true,"SortByItems":[{"DisplayValue":"Plant ","ReturnValue":"MaintenancePlanningPlant"},{"DisplayValue":"Planner Group","ReturnValue":"MaintenancePlannerGroup"}]}],"_Name":"FormCellSection0","Caption":"Sort by","Visible":true},{"Controls":[{"_Type":"Control.Type.FormCell.Filter","_Name":"PromoFilter","IsVisible":true,"AllowMultipleSelection":true,"AllowEmptySelection":true,"Caption":"Filter","IsEditable":true,"FilterProperty":[{"DisplayValue":"Available","ReturnValue":"Promotion"}]}],"_Name":"FormCellSection1","Caption":"Filter By","Visible":true}]}],"DesignTimeTarget":{"Service":"/EAM_AssetManagerv2/Services/mobileservices.service","EntitySet":"ZA_FUNCTIONAL_LOCATION"},"_Type":"Page","_Name":"FunctionLoc_List_filter","ActionBar":{"Items":[{"Text":"Cancel","_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"","SystemItem":"Cancel","Position":"left","IsIconCircular":false,"Visible":true,"OnPress":"/EAM_AssetManagerv2/Actions/CloseModalPage_Cancel.action"},{"Text":"Done","_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"","SystemItem":"Done","Position":"right","IsIconCircular":false,"Visible":true,"OnPress":"/EAM_AssetManagerv2/Actions/CloseModalPage_Complete.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"},"Result":["#Page:FunctionLoc_List_filter/#Control:SortBy/#Value"]}
 
 /***/ }),
 
@@ -1147,7 +1233,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \**************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Layout":{"LayoutType":"Vertical","HorizontalAlignment":"Leading"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable_mobileservices","Visible":true,"EmptySection":{"FooterVisible":false},"Buttons":[{"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton1","Title":"$(L,'functionLoc')","Alignment":"Left","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://navigation-right-arrow","ImagePosition":"Trailing","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_List.action"}]}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/EAM_AssetManagerv2/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Main","PrefersLargeCaption":true}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Layout":{"LayoutType":"Vertical","HorizontalAlignment":"Leading"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable_mobileservices","Visible":true,"EmptySection":{"FooterVisible":false},"Buttons":[{"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton1","Title":"$(L,'functionLoc')","Alignment":"Left","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://navigation-right-arrow","ImagePosition":"Trailing","FullWidth":true,"Visible":true,"Enabled":true,"OnPress":"/EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_List.action"}]}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/EAM_AssetManagerv2/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Main","PrefersLargeCaption":true}}
 
 /***/ }),
 
@@ -1341,6 +1427,46 @@ module.exports = {"_Type":"Action.Type.Navigation","PageToOpen":"/EAM_AssetManag
 
 /***/ }),
 
+/***/ "./build.definitions/EAM_AssetManagerv2/Actions/FunctionalLocation/FunctionLoc_Desc_Menu.action":
+/*!******************************************************************************************************!*\
+  !*** ./build.definitions/EAM_AssetManagerv2/Actions/FunctionalLocation/FunctionLoc_Desc_Menu.action ***!
+  \******************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.PopoverMenu","ActionResult":{"_Name":"FunctionLoc_Desc_Menu"},"Title":"Menu","TextAlignment":"Center","IconPosition":"Leading","PopoverItems":[{"Title":"Create Work Order","Icon":"sap-icon://add-equipment","TextAlignment":"Center","OnPress":"/EAM_AssetManagerv2/Actions/Application/NavToAbout.action","Visible":true,"Enabled":true,"Styles.Title":"","Styles.Icon":""},{"Title":"Create Notification","Icon":"sap-icon://message-warning","TextAlignment":"Center","OnPress":"/EAM_AssetManagerv2/Actions/Application/NavToAbout.action","Visible":true,"Enabled":true,"Styles.Title":"","Styles.Icon":""}]}
+
+/***/ }),
+
+/***/ "./build.definitions/EAM_AssetManagerv2/Actions/FunctionalLocation/FunctionLoc_List_Filter.action":
+/*!********************************************************************************************************!*\
+  !*** ./build.definitions/EAM_AssetManagerv2/Actions/FunctionalLocation/FunctionLoc_List_Filter.action ***!
+  \********************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Filter","ActionResult":{"_Name":"FunctionLoc_List_Filter"},"Filterable":"#Page:FunctionLoc_List/#Control:SectionedTable0","PageToOpen":"/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_List_Filter.page"}
+
+/***/ }),
+
+/***/ "./build.definitions/EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_Des.action":
+/*!*******************************************************************************************************!*\
+  !*** ./build.definitions/EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_Des.action ***!
+  \*******************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavToFunctionalLoc_Des"},"PageToOpen":"/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_Desc.page","NavigationType":"Inner"}
+
+/***/ }),
+
+/***/ "./build.definitions/EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_List.action":
+/*!********************************************************************************************************!*\
+  !*** ./build.definitions/EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_List.action ***!
+  \********************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavToFunctionalLoc_List"},"PageToOpen":"/EAM_AssetManagerv2/Pages/FunctionalLocation/FunctionLoc_List.page","NavigationType":"Inner"}
+
+/***/ }),
+
 /***/ "./build.definitions/EAM_AssetManagerv2/Actions/GenericBannerMessage.action":
 /*!**********************************************************************************!*\
   !*** ./build.definitions/EAM_AssetManagerv2/Actions/GenericBannerMessage.action ***!
@@ -1421,36 +1547,6 @@ module.exports = {"Animated":true,"CompletionMessage":"Logs Uploaded","Completio
 
 /***/ }),
 
-/***/ "./build.definitions/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_Des.action":
-/*!************************************************************************************!*\
-  !*** ./build.definitions/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_Des.action ***!
-  \************************************************************************************/
-/***/ ((module) => {
-
-module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavToFunctionalLoc_Des"},"PageToOpen":"/EAM_AssetManagerv2/Pages/FunctionLoc_Desc.page"}
-
-/***/ }),
-
-/***/ "./build.definitions/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_Desc.action":
-/*!*************************************************************************************!*\
-  !*** ./build.definitions/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_Desc.action ***!
-  \*************************************************************************************/
-/***/ ((module) => {
-
-module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavToFunctionalLoc_Desc"},"PageToOpen":"/EAM_AssetManagerv2/Pages/FunctionLoc_Desc.page","NavigationType":"Inner"}
-
-/***/ }),
-
-/***/ "./build.definitions/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_List.action":
-/*!*************************************************************************************!*\
-  !*** ./build.definitions/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_List.action ***!
-  \*************************************************************************************/
-/***/ ((module) => {
-
-module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavToFunctionalLoc_List"},"PageToOpen":"/EAM_AssetManagerv2/Pages/FunctionLoc_List.page","NavigationType":"Inner"}
-
-/***/ }),
-
 /***/ "./build.definitions/EAM_AssetManagerv2/Actions/mobileservices/Service/CloseOffline.action":
 /*!*************************************************************************************************!*\
   !*** ./build.definitions/EAM_AssetManagerv2/Actions/mobileservices/Service/CloseOffline.action ***!
@@ -1487,7 +1583,7 @@ module.exports = {"Message":"Data service closed successfully","NumberOfLines":1
   \****************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.OfflineOData.Download","ActionResult":{"_Name":"sync"},"OnFailure":"/EAM_AssetManagerv2/Actions/mobileservices/Service/SyncFailureMessage.action","OnSuccess":"/EAM_AssetManagerv2/Rules/mobileservices/ErrorArchive_CheckForSyncError.js","Service":"/EAM_AssetManagerv2/Services/mobileservices.service","DefiningRequests":[{"Name":"Customers","Query":"Customers","AutomaticallyRetrievesStreams":false}]}
+module.exports = {"_Type":"Action.Type.OfflineOData.Download","ActionResult":{"_Name":"sync"},"OnFailure":"/EAM_AssetManagerv2/Actions/mobileservices/Service/SyncFailureMessage.action","OnSuccess":"/EAM_AssetManagerv2/Rules/mobileservices/ErrorArchive_CheckForSyncError.js","Service":"/EAM_AssetManagerv2/Services/mobileservices.service","DefiningRequests":[{"Name":"ZA_FUNCTIONAL_LOCATION","Query":"ZA_FUNCTIONAL_LOCATION","AutomaticallyRetrievesStreams":false}]}
 
 /***/ }),
 
@@ -1507,7 +1603,7 @@ module.exports = {"Message":"Download in progress...","CompletionMessage":"Downl
   \******************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.Initialize","ActionResult":{"_Name":"init"},"OnFailure":"/EAM_AssetManagerv2/Actions/mobileservices/Service/InitializeOfflineFailureMessage.action","ShowActivityIndicator":true,"ActivityIndicatorText":"Downloading...","Service":"/EAM_AssetManagerv2/Services/mobileservices.service","DefiningRequests":[{"Name":"Customers","Query":"Customers"}]}
+module.exports = {"_Type":"Action.Type.ODataService.Initialize","ActionResult":{"_Name":"init"},"OnFailure":"/EAM_AssetManagerv2/Actions/mobileservices/Service/InitializeOfflineFailureMessage.action","ShowActivityIndicator":true,"ActivityIndicatorText":"Downloading...","Service":"/EAM_AssetManagerv2/Services/mobileservices.service","DefiningRequests":[{"Name":"ZA_FUNCTIONAL_LOCATION","Query":"ZA_FUNCTIONAL_LOCATION"}]}
 
 /***/ }),
 
@@ -1597,7 +1693,7 @@ module.exports = {"Value":"1-800-677-7271","_Type":"String"}
   \******************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"DestinationName":"com.sap.edm.sampleservice.v4","OfflineEnabled":true,"SourceType":"Mobile","RestService":false}
+module.exports = {"DestinationName":"mobileservices","OfflineEnabled":true,"SourceType":"Mobile","RestService":false}
 
 /***/ }),
 
@@ -1660,7 +1756,7 @@ __webpack_require__.d(exports, {
 /***/ ((module) => {
 
 "use strict";
-module.exports = {};
+module.exports = /*#__PURE__*/JSON.parse('{"FormCell":{"display":"inline-flex","flex-direction":"column"}}');
 
 /***/ }),
 

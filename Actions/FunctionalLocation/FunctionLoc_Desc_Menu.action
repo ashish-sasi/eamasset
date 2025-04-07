@@ -1,0 +1,31 @@
+{
+	"_Type": "Action.Type.PopoverMenu",
+	"ActionResult": {
+		"_Name": "FunctionLoc_Desc_Menu"
+	},
+	"Title": "Menu",
+	"TextAlignment": "Center",
+	"IconPosition": "Leading",
+	"PopoverItems": [
+		{
+			"Title": "Create Work Order",
+			"Icon": "sap-icon://add-equipment",
+			"TextAlignment": "Center",
+			"OnPress": "/EAM_AssetManagerv2/Actions/Application/NavToAbout.action",
+			"Visible": true,
+			"Enabled": true,
+			"Styles.Title": "",
+			"Styles.Icon": ""
+		},
+		{
+			"Title": "Create Notification",
+			"Icon": "sap-icon://message-warning",
+			"TextAlignment": "Center",
+			"OnPress": "/EAM_AssetManagerv2/Actions/Application/NavToAbout.action",
+			"Visible": true,
+			"Enabled": true,
+			"Styles.Title": "",
+			"Styles.Icon": ""
+		}
+	]
+}
