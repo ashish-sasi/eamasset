@@ -8,8 +8,8 @@
 	"Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
 	"DefiningRequests": [
 		{
-			"Name": "Customers",
-			"Query": "Customers",
+			"Name": "ZA_FUNCTIONAL_LOCATION",
+			"Query": "ZA_FUNCTIONAL_LOCATION",
 			"AutomaticallyRetrievesStreams": false
 		}
 	]

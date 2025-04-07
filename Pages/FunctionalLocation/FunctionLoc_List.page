@@ -12,14 +12,14 @@
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
+						"HeaderSeparator": false,
 						"FooterSeparator": true,
 						"ControlSeparator": false
 					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
-						"EntitySet": "Customers"
+						"EntitySet": "ZA_FUNCTIONAL_LOCATION"
 					},
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
@@ -34,8 +34,9 @@
 							"TrailingItems": [],
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
-						"Title": "{FirstName}",
-						"Subhead": "{DateOfBirth}",
+						"Title": "{FunctionalLocationName}",
+						"Subhead": "{MaintenancePlanningPlant}",
+						"Footnote": "{FunctionalLocation}",
 						"DisplayDescriptionInMobile": true,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
@@ -53,7 +54,7 @@
 							"Avatars": [],
 							"ImageIsCircular": true
 						},
-						"OnPress": "/EAM_AssetManagerv2/Actions/NavToFunctionalLoc_Des.action",
+						"OnPress": "/EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_Des.action",
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": true
 					},
@@ -68,7 +69,8 @@
 								"Enabled": true
 							}
 						},
-						"Enabled": true
+						"Enabled": true,
+						"BarcodeScanner": true
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -95,9 +97,22 @@
 				"Position": "Left",
 				"IsIconCircular": false,
 				"Visible": true
+			},
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem1",
+				"Caption": "Filter",
+				"Icon": "sap-icon://filter",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/EAM_AssetManagerv2/Actions/FunctionalLocation/FunctionLoc_List_Filter.action"
 			}
 		],
 		"_Name": "ActionBar0",
 		"_Type": "Control.Type.ActionBar"
-	}
+	},
+	"Result": [
+		"#Page:FunctionLoc_List/#Control:SortBy/#Value"
+	]
 }
