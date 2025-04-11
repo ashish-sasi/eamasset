@@ -19,7 +19,7 @@
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
-						"EntitySet": "ZA_FUNCTIONAL_LOCATION"
+						"EntitySet": "ZA_FunctionalLocation"
 					},
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
@@ -113,6 +113,8 @@
 		"_Type": "Control.Type.ActionBar"
 	},
 	"Result": [
-		"#Page:FunctionLoc_List/#Control:SortBy/#Value"
+		"#Page:FunctionLoc_List/#Control:SortBy/#Value",
+		"#Page:FunctionLoc_List_filter/#Control:FormCellListPicker0/#FilterValue",
+		"#Page:FunctionLoc_List_filter/#Control:PromoFilter/#Value"
 	]
 }

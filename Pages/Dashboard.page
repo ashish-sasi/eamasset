@@ -1,16 +1,12 @@
 {
 	"Controls": [
 		{
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
 					"_Type": "Section.Type.SimplePropertyCollection",
-					"_Name": "SectionSimplePropertyCollection0",
+					"_Name": "SectionSimplePropertyCollection2",
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
@@ -26,9 +22,6 @@
 						{
 							"SimplePropertyCell": {
 								"Value": "/EAM_AssetManagerv2/Rules/FunctionalLocation/FunctionalLocationTitle.js",
-								"DataSubscriptions": [
-									"ZA_FunctionalLocation"
-								],
 								"_Name": "SectionSimplePropertyCell0",
 								"_Type": "SimplePropertyCollection.Type.Cell",
 								"KeyName": "Functional Location",
@@ -39,10 +32,9 @@
 						},
 						{
 							"SimplePropertyCell": {
-								"Value": "20",
 								"_Name": "SectionSimplePropertyCell1",
 								"_Type": "SimplePropertyCollection.Type.Cell",
-								"KeyName": "$(L,'Equipments')",
+								"KeyName": "Equipments",
 								"AccessoryType": "DisclosureIndicator",
 								"Visible": true,
 								"OnPress": "/EAM_AssetManagerv2/Actions/Equipment/NavToEquipment_List.action"
@@ -53,17 +45,28 @@
 						"NumberOfColumns": 1
 					}
 				}
-			]
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Main",
-	"OnLoaded": "/EAM_AssetManagerv2/Rules/FunctionalLocation/FunctionalLocationTitle.js",
+	"_Name": "Dashboard",
 	"ActionBar": {
 		"Items": [
 			{
 				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem0",
+				"Caption": "Dashboard",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true
+			},
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem1",
 				"Caption": "User Menu",
 				"Icon": "sap-icon://customer",
 				"Position": "Right",
@@ -71,10 +74,9 @@
 				"Visible": true,
 				"OnPress": "/EAM_AssetManagerv2/Actions/Application/UserMenuPopover.action"
 			}
+		
 		],
-		"_Name": "ActionBar1",
-		"_Type": "Control.Type.ActionBar",
-		"Caption": "Main",
-		"PrefersLargeCaption": true
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar"
 	}
 }

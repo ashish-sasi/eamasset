@@ -1,9 +1,11 @@
+// import FunctionalLocationTitle from "../FunctionalLocation/FunctionalLocationTitle";
 export default function Initialize(context) {
 
     // Perform pre data initialization task
 
     // Initialize all your Data sources
     let _mobileservices = context.executeAction('/EAM_AssetManagerv2/Actions/mobileservices/Service/InitializeOffline.action');
+    // let _functionalLocationTitle = FunctionalLocationTitle();
 
     //You can add more service initialize actions here
 

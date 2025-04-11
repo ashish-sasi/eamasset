@@ -8,8 +8,8 @@
 	"Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
 	"DefiningRequests": [
 		{
-			"Name": "ZA_FUNCTIONAL_LOCATION",
-			"Query": "ZA_FUNCTIONAL_LOCATION",
+			"Name": "ZA_FunctionalLocation",
+			"Query": "ZA_FunctionalLocation",
 			"AutomaticallyRetrievesStreams": false
 		}
 	]

@@ -37,13 +37,11 @@
             <EntityType Name="ZA_EquipmentType" sap:label="Equipment Entity For EAM" sap:content-version="1">
                 <Key>
                     <PropertyRef Name="Equipment"/>
-
                     <PropertyRef Name="ValidityEndDate"/>
                 </Key>
                 <Property Name="Equipment" Type="Edm.String" Nullable="false" MaxLength="18" sap:display-format="UpperCase" sap:label="Equipment" sap:quickinfo="Equipment Number"/>
                 <Property Name="ValidityEndDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:display-format="Date" sap:label="Valid To" sap:quickinfo="Valid To Date"/>
                 <Property Name="ValidityEndTime" Type="Edm.Time" Precision="0" sap:label="Time" sap:quickinfo="Equipment usage period time stamp"/>
-
                 <Property Name="ValidityStartDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Valid From" sap:quickinfo="Valid-From Date"/>
                 <Property Name="EquipmentName" Type="Edm.String" MaxLength="40" sap:label="Object Description" sap:quickinfo="Description of technical object"/>
                 <Property Name="EquipmentCategory" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Equipment category"/>
@@ -135,7 +133,6 @@
                 <Property Name="EquipmentIsInactive" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Checkbox" sap:heading=""/>
                 <Property Name="EquipHasSubOrdinateEquipment" Type="Edm.String" MaxLength="1"/>
             </EntityType>
-
             <EntityType Name="ZA_FunctionalLocationType" sap:label="Equipment Entity For EAM" sap:content-version="1">
                 <Key>
                     <PropertyRef Name="FunctionalLocation"/>

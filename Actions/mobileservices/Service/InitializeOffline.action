@@ -10,13 +10,13 @@
 	"DefiningRequests": [
 		{
 			"Name": "ZA_Equipment",
-			"Query": "ZA_Equipment"
+			"Query": "ZA_Equipment",
+			"AutomaticallyRetrievesStreams": false
 		},
 		{
 			"Name": "ZA_FunctionalLocation",
 			"Query": "ZA_FunctionalLocation",
 			"AutomaticallyRetrievesStreams": false
-
 		}
 	]
 }
