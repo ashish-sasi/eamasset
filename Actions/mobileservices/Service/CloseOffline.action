@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/EAM_AssetManagerv2/Actions/mobileservices/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/EAM_AssetManagerv2/Actions/mobileservices/Service/CloseOfflineFailureMessage.action"
+}

@@ -1,0 +1,80 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.SimplePropertyCollection",
+					"_Name": "SectionSimplePropertyCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"Value": "/EAM_AssetManagerv2/Rules/FunctionalLocation/FunctionalLocationTitle.js",
+								"DataSubscriptions": [
+									"ZA_FunctionalLocation"
+								],
+								"_Name": "SectionSimplePropertyCell0",
+								"_Type": "SimplePropertyCollection.Type.Cell",
+								"KeyName": "Functional Location",
+								"AccessoryType": "DisclosureIndicator",
+								"Visible": true,
+								"OnPress": "/EAM_AssetManagerv2/Actions/FunctionalLocation/NavToFunctionalLoc_List.action"
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"Value": "20",
+								"_Name": "SectionSimplePropertyCell1",
+								"_Type": "SimplePropertyCollection.Type.Cell",
+								"KeyName": "$(L,'Equipments')",
+								"AccessoryType": "DisclosureIndicator",
+								"Visible": true,
+								"OnPress": "/EAM_AssetManagerv2/Actions/Equipment/NavToEquipment_List.action"
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"OnLoaded": "/EAM_AssetManagerv2/Rules/FunctionalLocation/FunctionalLocationTitle.js",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/EAM_AssetManagerv2/Actions/Application/UserMenuPopover.action"
+			}
+		],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Main",
+		"PrefersLargeCaption": true
+	}
+}

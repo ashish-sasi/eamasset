@@ -1,0 +1,22 @@
+{
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnFailure": "/EAM_AssetManagerv2/Actions/mobileservices/Service/InitializeOfflineFailureMessage.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
+	"DefiningRequests": [
+		{
+			"Name": "ZA_Equipment",
+			"Query": "ZA_Equipment",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "ZA_FunctionalLocation",
+			"Query": "ZA_FunctionalLocation",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+	"DestinationName": "mobileservices",
+	"OfflineEnabled": true,
+	"SourceType": "Mobile",
+	"RestService": false
+}

@@ -1,0 +1,135 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"AllowMultipleSelection": true,
+							"_Type": "Control.Type.FormCell.Sorter",
+							"_Name": "SortBy",
+							"IsVisible": true,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"SortByItems": [
+								{
+									"DisplayValue": "Plant ",
+									"ReturnValue": "MaintenancePlanningPlant"
+								},
+								{
+									"DisplayValue": "Planner Group",
+									"ReturnValue": "MaintenancePlannerGroup"
+								},
+								{
+									"DisplayValue": "Plant Section",
+									"ReturnValue": "PlantSection"
+								},
+								{
+									"DisplayValue": "Work Center",
+									"ReturnValue": "WorkCenter"
+								}
+							]
+						}
+					],
+					"_Name": "FormCellSection0",
+					"Caption": "Sort by",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsVisible": true,
+							"AllowMultipleSelection": true,
+							"AllowEmptySelection": true,
+							"Caption": "Plant",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select item",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"FilterProperty": "MaintenancePlant",
+							"Search": {
+								"Mode": "Expandable",
+								"Enabled": true
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
+									"EntitySet": "ZA_FunctionalLocation",
+									"QueryOptions": "$select=MaintenancePlant"
+								},
+								"DisplayValue": "{MaintenancePlant}",
+								"ReturnValue": "{MaintenancePlant}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.Filter",
+							"_Name": "PromoFilter",
+							"IsVisible": true,
+							"AllowMultipleSelection": true,
+							"AllowEmptySelection": true,
+							"Caption": "Filter by",
+							"IsEditable": true,
+							"FilterProperty": [
+								{
+									"DisplayValue": "Company Code IN01",
+									"ReturnValue": "/EAM_AssetManagerv2/Rules/FunctionalLocation/PlantSectionFilter.js"
+								}
+							]
+						}
+					],
+					"_Name": "FormCellSection2",
+					"Visible": true
+				}
+			]
+		}
+	],
+	"DesignTimeTarget": {
+		"Service": "/EAM_AssetManagerv2/Services/mobileservices.service",
+		"EntitySet": "ZA_FunctionalLocation"
+	},
+	"_Type": "Page",
+	"_Name": "FunctionLoc_List_filter",
+	"ActionBar": {
+		"Items": [
+			{
+				"Text": "Cancel",
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/EAM_AssetManagerv2/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Text": "Done",
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Done",
+				"Position": "right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/EAM_AssetManagerv2/Actions/CloseModalPage_Complete.action"
+			}
+		],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Result": [
+		"#Page:FunctionLoc_List_filter/#Control:SortBy/#Value",
+		"#Page:FunctionLoc_List_filter/#Control:FormCellListPicker0/#FilterValue",
+		"#Page:FunctionLoc_List_filter/#Control:PromoFilter/#Value"
+	]
+}
